@@ -263,6 +263,11 @@ p {
 .nav-spacer {
   height: 50px;
 }
+@media (max-width: 500px) {
+  .nav-spacer {
+    height: 0px;
+  }
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -273,6 +278,11 @@ p {
   padding: 2em;
   border-radius: 4px;
   box-shadow: 0px 0px 10px 5px #777777;
+}
+@media (max-width: 500px) {
+  .container {
+    box-shadow: none;
+  }
 }
 .container section {
   display: flex;
