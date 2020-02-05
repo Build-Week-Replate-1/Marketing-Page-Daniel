@@ -1,5 +1,4 @@
 .header-style {
-  font-family: 'Bebas Neue', cursive;
   font-size: 2.5em;
   color: #01FF70;
 }
@@ -171,7 +170,6 @@ header {
 header h1 {
   display: flex;
   justify-content: center;
-  font-family: 'Bebas Neue', cursive;
   font-size: 2.5em;
   color: #01FF70;
   margin: 1%;
@@ -182,22 +180,75 @@ header nav {
   margin: 1%;
 }
 header a {
-  font-family: 'Bebas Neue', cursive;
   font-size: 2.5em;
   color: #01FF70;
   text-decoration: none;
+}
+header a:hover {
+  color: black;
+  background: #7FDBFF;
+}
+footer {
+  background-color: darkgreen;
+  width: 100%;
+  height: auto;
+  padding: 1em 15em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+}
+address {
+  color: #01FF70;
+}
+copyright {
+  color: #01FF70;
+}
+h3 {
+  color: #01FF70;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+.social_media {
+  display: flex;
+}
+.social_media .fa {
+  border-radius: 50px;
+  padding: 20px;
+  font-size: 30px;
+  width: 65px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.social_media .fa:hover {
+  opacity: 0.7;
+}
+.social_media .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.social_media .fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.social_media .fa-instagram {
+  background: #125688;
+  color: white;
 }
 * {
   box-sizing: border-box;
 }
 body {
-  background: url("https://images.unsplash.com/photo-1580184481690-5546bb513ae7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80");
+  background: url("https://images.unsplash.com/photo-1553013746-1a67c06802da?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
 }
+img {
+  max-width: 100%;
+  width: 35%;
+}
 h2 {
   color: #01FF70;
-  font-family: 'Bebas Neue', cursive;
   font-size: 2.5em;
   margin-bottom: 10px;
   background-color: darkgreen;
@@ -209,16 +260,23 @@ p {
   padding: 0.25% 1%;
   line-height: 1.5;
 }
+.nav-spacer {
+  height: 50px;
+}
 .container {
-  background: rgba(255, 255, 255, 0.75);
-  padding: 2%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   max-width: 980px;
-  margin: 0 auto;
+  margin: 5em auto 3.5em;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2em;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px 5px #777777;
 }
 .container section {
+  display: flex;
+  flex-direction: row;
   margin: 3.5em 0;
 }
 .container section:nth-child(2) {
@@ -226,8 +284,8 @@ p {
   text-align: right;
 }
 .container section:nth-child(2) p:nth-child(2) {
-  align-items: flex-start;
-  text-align: left;
+  padding-left: 30%;
+  padding-right: 0;
 }
 .container section p {
   padding-right: 30%;
