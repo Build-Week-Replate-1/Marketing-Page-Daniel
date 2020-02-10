@@ -1,6 +1,6 @@
 .header-style {
   font-size: 2.5em;
-  color: #01FF70;
+  color: white;
 }
 @font-face {
   font-family: 'Bebas Neue';
@@ -147,19 +147,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-h2 {
-  color: #01FF70;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 3em;
-  margin-bottom: 10px;
-  background-color: darkgreen;
-}
-p {
-  font-family: 'Martel Sans', sans-serif;
-  line-height: 1.5;
+* {
+  box-sizing: border-box;
 }
 header {
-  background-color: darkgreen;
+  background-color: #083108;
   width: 100%;
   height: auto;
   padding: 1em 15em;
@@ -167,26 +159,90 @@ header {
   display: flex;
   flex-direction: column;
 }
-header h1 {
+@media (max-width: 500px) {
+  header {
+    padding: 1% 0 1% 0;
+  }
+}
+h1 {
   display: flex;
   justify-content: center;
   font-size: 2.5em;
-  color: #01FF70;
+  color: white;
   margin: 1%;
 }
-header nav {
+@media (max-width: 500px) {
+  h1 {
+    padding: 2%;
+  }
+}
+h2 {
+  color: #01FF70;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3em;
+  margin-bottom: 10px;
+  background-color: #083108;
+}
+@media (max-width: 500px) {
+  h2 {
+    font-size: 2.5em;
+  }
+}
+nav {
   display: flex;
   justify-content: space-around;
   margin: 1%;
 }
-header a {
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+  }
+}
+nav a {
+  font-family: 'Bebas Neue', cursive;
   font-size: 2.5em;
-  color: #01FF70;
+  color: white;
   text-decoration: none;
 }
-header a:hover {
+@media (max-width: 500px) {
+  nav a {
+    display: flex;
+    justify-content: center;
+    padding: 0.75%;
+    font-size: 2em;
+    margin: 1% 8% 1% 8%;
+    border: 1px solid black;
+    border-radius: 4px;
+  }
+}
+nav.a {
+  display: flex;
+  justify-content: space-around;
+  margin: 1%;
+}
+@media (max-width: 500px) {
+  nav.a {
+    flex-direction: column;
+  }
+}
+nav.a a {
+  font-size: 2.5em;
+  color: white;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  nav.a a {
+    display: flex;
+    justify-content: center;
+  }
+}
+a:hover {
   color: black;
-  background: #7FDBFF;
+  background: #01FF70;
+}
+p {
+  font-family: 'Martel Sans', sans-serif;
+  line-height: 1.5;
 }
 footer {
   background-color: darkgreen;
@@ -196,6 +252,11 @@ footer {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 500px) {
+  footer {
+    padding: 1em 2em;
+  }
 }
 address {
   color: #01FF70;
@@ -250,15 +311,30 @@ body.a {
 }
 img {
   max-width: 100%;
-  width: 35%;
+  width: 45%;
+  border-radius: 4px;
+  margin: 5%;
+}
+@media (max-width: 500px) {
+  img {
+    width: 100%;
+  }
 }
 h2 {
-  color: #01FF70;
+  color: white;
   font-size: 2.5em;
   margin-bottom: 10px;
-  background-color: darkgreen;
+  background-color: #083108;
   border-radius: 4px;
   padding: 0.25% 1%;
+}
+@media (max-width: 500px) {
+  h2 {
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    padding: 1% 0 1% 0;
+  }
 }
 p {
   font-family: 'Martel Sans', sans-serif;
@@ -298,12 +374,44 @@ p {
   align-items: flex-end;
   text-align: right;
 }
+@media (max-width: 500px) {
+  .container section:nth-child(2) {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
 .container section:nth-child(2) p:nth-child(2) {
   padding-left: 30%;
   padding-right: 0;
+}
+@media (max-width: 500px) {
+  .container section:nth-child(2) p:nth-child(2) {
+    padding-left: 0;
+  }
 }
 .container section p {
   padding-right: 30%;
   margin: 0.5em 0;
   font-weight: 600;
+}
+@media (max-width: 500px) {
+  .container section p {
+    padding-right: 0%;
+  }
+}
+@media (max-width: 500px) {
+  .container section.about,
+  .container section.nonprofit,
+  .container section.owners,
+  .container section.dude1,
+  .container section.dude2,
+  .container section.dude3,
+  .container section.dude4,
+  .container section.dude5,
+  .container section.dude6,
+  .container section.dude7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
