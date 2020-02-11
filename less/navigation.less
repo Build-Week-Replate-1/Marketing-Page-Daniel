@@ -1,0 +1,95 @@
+header {
+    background-color: #083108;
+    width: 100%;
+    height: auto;
+    padding: 1em 15em;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+
+      @media @phone {
+        padding: 1% 0 1% 0;
+    }
+
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  .header-style;
+  margin: 1%;
+
+  @media @phone {
+  padding: 2%;
+  }
+  
+}
+
+h2 {
+  color: @green;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3em;
+  margin-bottom: 10px;
+  background-color: #083108;
+
+  @media @phone{
+    font-size: 2.5em;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 1%;
+    @media @phone {
+    flex-direction: column;
+  }
+
+  a {
+  font-family: 'Bebas Neue', cursive;
+    .header-style;
+    text-decoration: none;
+
+      @media @phone {
+      display: flex;
+      justify-content: center;
+      padding: 0.75%;
+      font-size: 2em;
+      margin: 1% 8% 1% 8%;
+      border: 1px solid black;
+      border-radius: 4px;
+      }
+    }
+}
+    
+nav.a {
+  display: flex;
+  justify-content: space-around;
+  margin: 1%;
+    @media @phone {
+    flex-direction: column;
+    }
+
+  a {
+  .header-style;
+  text-decoration: none;
+    @media @phone {
+    display: flex;
+    justify-content: center;
+    }      
+  }
+}
+
+a:hover {
+color: black;
+background: @green;
+}
+
+
+  
+// Paragraphs
+p {
+    font-family: 'Martel Sans', sans-serif;
+    line-height: 1.5;
+}
+  
